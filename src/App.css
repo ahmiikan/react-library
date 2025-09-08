@@ -1,0 +1,93 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 48px;
+  margin: 0 0 16px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header p {
+  font-size: 20px;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.section {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 32px;
+  margin: 0 0 32px;
+  color: #333;
+  font-weight: 600;
+}
+
+.section h3 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+.component-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.component-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 36px;
+  }
+
+  .app-header p {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 24px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
